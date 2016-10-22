@@ -6,6 +6,7 @@ google drive downloader for local backups
 curl -L https://install.perlbrew.pl | bash
 perlbrew init
 perlbrew install perl-5.18.4 -j 9
+perlbrew install-cpanm
 perlbrew lib create perl-5.18.4@gdrive
 perlbrew use perl-5.18.4@gdrive
 cpanm Net::Google::Drive::Simple DateTime DateTime::Format::RFC3339
