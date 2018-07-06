@@ -1,12 +1,12 @@
 #!/usr/bin/env perl
 #
-# $Id: my-drive-sync.pl,v 1.1.1.1 2016/10/21 13:28:58 raven Exp $
+# $Id: my-drive-sync.pl,v 1.2 2018/07/06 02:42:20 raven Exp $
 #
 use strict;
 use warnings;
 
 our $WHOAMI = 'my-drive-sync';
-our $VERSION = '$Revision: 1.1.1.1 $'; $VERSION =~ s/^\$Revision\:\s([\d\.]+)\s\$$/$1/i;
+our $VERSION = '$Revision: 1.2 $'; $VERSION =~ s/^\$Revision\:\s([\d\.]+)\s\$$/$1/i;
 
 {
  package Net::Google::Drive::Simple::Mirror;
@@ -223,7 +223,7 @@ our $VERSION = '$Revision: 1.1.1.1 $'; $VERSION =~ s/^\$Revision\:\s([\d\.]+)\s\
      -f($local_file)
      and ($remote_epoch < $local_epoch)
     ) {
-     print("skiping [$local_file]...\n");
+     print("skipping [$local_file]...\n");
      return(0);
     } else {
      return(1);
