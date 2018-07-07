@@ -1,3 +1,6 @@
+# discontinued
+You have to use more flexible [rclone](https://rclone.org/) tool instead this.
+
 # my-drive-sync
 google drive downloader for local backups
 
